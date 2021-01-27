@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A20C21025C182FC00978528 /* MindMineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20C20F25C182FC00978528 /* MindMineApp.swift */; };
+		9A20C21225C182FC00978528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20C21125C182FC00978528 /* ContentView.swift */; };
+		9A20C21425C182FE00978528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A20C21325C182FE00978528 /* Assets.xcassets */; };
+		9A20C21725C182FE00978528 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A20C21625C182FE00978528 /* Preview Assets.xcassets */; };
+		9A20C22225C182FE00978528 /* MindMineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20C22125C182FE00978528 /* MindMineTests.swift */; };
+		9A20C22D25C182FE00978528 /* MindMineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20C22C25C182FE00978528 /* MindMineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A20C21E25C182FE00978528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A20C20425C182FC00978528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A20C20B25C182FC00978528;
+			remoteInfo = MindMine;
+		};
+		9A20C22925C182FE00978528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A20C20425C182FC00978528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A20C20B25C182FC00978528;
+			remoteInfo = MindMine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A20C20C25C182FC00978528 /* MindMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A20C20F25C182FC00978528 /* MindMineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMineApp.swift; sourceTree = "<group>"; };
+		9A20C21125C182FC00978528 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A20C21325C182FE00978528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A20C21625C182FE00978528 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A20C21825C182FE00978528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A20C21D25C182FE00978528 /* MindMineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindMineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A20C22125C182FE00978528 /* MindMineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMineTests.swift; sourceTree = "<group>"; };
+		9A20C22325C182FE00978528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A20C22825C182FE00978528 /* MindMineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindMineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A20C22C25C182FE00978528 /* MindMineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMineUITests.swift; sourceTree = "<group>"; };
+		9A20C22E25C182FE00978528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A20C20925C182FC00978528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A20C21A25C182FE00978528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A20C22525C182FE00978528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A20C20325C182FC00978528 = {
+			isa = PBXGroup;
+			children = (
+				9A20C20E25C182FC00978528 /* MindMine */,
+				9A20C22025C182FE00978528 /* MindMineTests */,
+				9A20C22B25C182FE00978528 /* MindMineUITests */,
+				9A20C20D25C182FC00978528 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A20C20D25C182FC00978528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A20C20C25C182FC00978528 /* MindMine.app */,
+				9A20C21D25C182FE00978528 /* MindMineTests.xctest */,
+				9A20C22825C182FE00978528 /* MindMineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A20C20E25C182FC00978528 /* MindMine */ = {
+			isa = PBXGroup;
+			children = (
+				9A20C20F25C182FC00978528 /* MindMineApp.swift */,
+				9A20C21125C182FC00978528 /* ContentView.swift */,
+				9A20C21325C182FE00978528 /* Assets.xcassets */,
+				9A20C21825C182FE00978528 /* Info.plist */,
+				9A20C21525C182FE00978528 /* Preview Content */,
+			);
+			path = MindMine;
+			sourceTree = "<group>";
+		};
+		9A20C21525C182FE00978528 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A20C21625C182FE00978528 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A20C22025C182FE00978528 /* MindMineTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A20C22125C182FE00978528 /* MindMineTests.swift */,
+				9A20C22325C182FE00978528 /* Info.plist */,
+			);
+			path = MindMineTests;
+			sourceTree = "<group>";
+		};
+		9A20C22B25C182FE00978528 /* MindMineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A20C22C25C182FE00978528 /* MindMineUITests.swift */,
+				9A20C22E25C182FE00978528 /* Info.plist */,
+			);
+			path = MindMineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A20C20B25C182FC00978528 /* MindMine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A20C23125C182FE00978528 /* Build configuration list for PBXNativeTarget "MindMine" */;
+			buildPhases = (
+				9A20C20825C182FC00978528 /* Sources */,
+				9A20C20925C182FC00978528 /* Frameworks */,
+				9A20C20A25C182FC00978528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindMine;
+			productName = MindMine;
+			productReference = 9A20C20C25C182FC00978528 /* MindMine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A20C21C25C182FE00978528 /* MindMineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A20C23425C182FE00978528 /* Build configuration list for PBXNativeTarget "MindMineTests" */;
+			buildPhases = (
+				9A20C21925C182FE00978528 /* Sources */,
+				9A20C21A25C182FE00978528 /* Frameworks */,
+				9A20C21B25C182FE00978528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A20C21F25C182FE00978528 /* PBXTargetDependency */,
+			);
+			name = MindMineTests;
+			productName = MindMineTests;
+			productReference = 9A20C21D25C182FE00978528 /* MindMineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A20C22725C182FE00978528 /* MindMineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A20C23725C182FE00978528 /* Build configuration list for PBXNativeTarget "MindMineUITests" */;
+			buildPhases = (
+				9A20C22425C182FE00978528 /* Sources */,
+				9A20C22525C182FE00978528 /* Frameworks */,
+				9A20C22625C182FE00978528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A20C22A25C182FE00978528 /* PBXTargetDependency */,
+			);
+			name = MindMineUITests;
+			productName = MindMineUITests;
+			productReference = 9A20C22825C182FE00978528 /* MindMineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A20C20425C182FC00978528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					9A20C20B25C182FC00978528 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					9A20C21C25C182FE00978528 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 9A20C20B25C182FC00978528;
+					};
+					9A20C22725C182FE00978528 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 9A20C20B25C182FC00978528;
+					};
+				};
+			};
+			buildConfigurationList = 9A20C20725C182FC00978528 /* Build configuration list for PBXProject "MindMine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A20C20325C182FC00978528;
+			productRefGroup = 9A20C20D25C182FC00978528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A20C20B25C182FC00978528 /* MindMine */,
+				9A20C21C25C182FE00978528 /* MindMineTests */,
+				9A20C22725C182FE00978528 /* MindMineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A20C20A25C182FC00978528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A20C21725C182FE00978528 /* Preview Assets.xcassets in Resources */,
+				9A20C21425C182FE00978528 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A20C21B25C182FE00978528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A20C22625C182FE00978528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A20C20825C182FC00978528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A20C21225C182FC00978528 /* ContentView.swift in Sources */,
+				9A20C21025C182FC00978528 /* MindMineApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A20C21925C182FE00978528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A20C22225C182FE00978528 /* MindMineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A20C22425C182FE00978528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A20C22D25C182FE00978528 /* MindMineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A20C21F25C182FE00978528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A20C20B25C182FC00978528 /* MindMine */;
+			targetProxy = 9A20C21E25C182FE00978528 /* PBXContainerItemProxy */;
+		};
+		9A20C22A25C182FE00978528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A20C20B25C182FC00978528 /* MindMine */;
+			targetProxy = 9A20C22925C182FE00978528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A20C22F25C182FE00978528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A20C23025C182FE00978528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A20C23225C182FE00978528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MindMine/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MindMine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A20C23325C182FE00978528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MindMine/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MindMine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A20C23525C182FE00978528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MindMineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.MindMineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindMine.app/MindMine";
+			};
+			name = Debug;
+		};
+		9A20C23625C182FE00978528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MindMineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.MindMineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindMine.app/MindMine";
+			};
+			name = Release;
+		};
+		9A20C23825C182FE00978528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MindMineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.MindMineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindMine;
+			};
+			name = Debug;
+		};
+		9A20C23925C182FE00978528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MindMineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.MindMineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindMine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A20C20725C182FC00978528 /* Build configuration list for PBXProject "MindMine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A20C22F25C182FE00978528 /* Debug */,
+				9A20C23025C182FE00978528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A20C23125C182FE00978528 /* Build configuration list for PBXNativeTarget "MindMine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A20C23225C182FE00978528 /* Debug */,
+				9A20C23325C182FE00978528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A20C23425C182FE00978528 /* Build configuration list for PBXNativeTarget "MindMineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A20C23525C182FE00978528 /* Debug */,
+				9A20C23625C182FE00978528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A20C23725C182FE00978528 /* Build configuration list for PBXNativeTarget "MindMineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A20C23825C182FE00978528 /* Debug */,
+				9A20C23925C182FE00978528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A20C20425C182FC00978528 /* Project object */;
+}
