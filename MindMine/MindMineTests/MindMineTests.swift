@@ -2,7 +2,7 @@
 //  MindMineTests.swift
 //  MindMineTests
 //
-//  Created by Hugo on 27/01/2021.
+//  Created by SimonDahan on 02/03/2021.
 //
 
 import XCTest
