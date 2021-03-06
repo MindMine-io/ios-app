@@ -15,6 +15,8 @@
 		6BC57CD825EE523A00D709E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC57CD625EE523A00D709E2 /* LaunchScreen.storyboard */; };
 		6BC57D0725EE525700D709E2 /* MindMineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57D0525EE525700D709E2 /* MindMineTests.swift */; };
 		6BC57D1D25EE527D00D709E2 /* MindMineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57D1C25EE527D00D709E2 /* MindMineUITests.swift */; };
+		6BD855D325F19ECD00C9E748 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BD855D125F19ECC00C9E748 /* Model.xcdatamodeld */; };
+		6BD855E325F2810F00C9E748 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD855E225F2810F00C9E748 /* LocationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6BC57D0625EE525700D709E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BC57D1C25EE527D00D709E2 /* MindMineUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindMineUITests.swift; sourceTree = "<group>"; };
 		6BC57D2425EE527F00D709E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD855D225F19ECD00C9E748 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6BD855E225F2810F00C9E748 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				6BC57CD425EE523A00D709E2 /* Assets.xcassets */,
 				6BC57CD625EE523A00D709E2 /* LaunchScreen.storyboard */,
 				6BC57CD925EE523A00D709E2 /* Info.plist */,
+				6BD855D125F19ECC00C9E748 /* Model.xcdatamodeld */,
+				6BD855E225F2810F00C9E748 /* LocationItem.swift */,
 			);
 			path = MindMine;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC57CD025EE523700D709E2 /* ViewController.swift in Sources */,
+				6BD855E325F2810F00C9E748 /* LocationItem.swift in Sources */,
 				6BC57CCC25EE523700D709E2 /* AppDelegate.swift in Sources */,
 				6BC57CCE25EE523700D709E2 /* SceneDelegate.swift in Sources */,
+				6BD855D325F19ECD00C9E748 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +445,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2G6R6W3BG;
 				INFOPLIST_FILE = MindMine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +465,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2G6R6W3BG;
 				INFOPLIST_FILE = MindMine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,6 +599,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6BD855D125F19ECC00C9E748 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6BD855D225F19ECD00C9E748 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6BD855D225F19ECD00C9E748 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6BC57CC025EE523700D709E2 /* Project object */;
 }
