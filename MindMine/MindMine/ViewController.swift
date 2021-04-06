@@ -13,23 +13,81 @@ class ViewController: UIViewController,
     
     let manager: CLLocationManager = CLLocationManager() //this is the object that will provid GPS coordinates
     private var savedLocation = [LocationItem]()
+    private var patientInfo = PatientInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadPatientInfo()
+        if patientInfo.id == nil {
+            patientInfo.id = UUID()
+            savePatientInfo()
+        }
+        print(patientInfo)
+        
         print(dataFilePath())
         loadLocationList()
         print("current saved location in the app")
         print(savedLocation)
+        print("app folder path is \(NSHomeDirectory())")
+        
+    }
+    
+    // SEND button reference and action
+    @IBOutlet weak var sendButton: UIButton!
+    @IBAction func sendData(_ sender: UIButton) {
+        
+        // Prepare to encode in JSON. Specify date format and pass context to LocationItem,
+        // so that it serializes patient id in addition to measurement data
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        encoder.userInfo[.patientInfo] = patientInfo
+        
+        do{
+            // Serialize LocationItem list
+            let jsondata = try encoder.encode(savedLocation)
+            
+            // Uncomment below to print JSon data as string
+            // if let JSONString = String(data: jsondata, encoding: String.Encoding.utf8) {
+            //    print(JSONString)
+            // }
+            
+            // Main network handler
+            let session = URLSession.shared
+            
+            // Creating request and updating header
+            // CHANGE URL TO LOCAL IF NEEDED (get your local IP)
+            // let url = URL(string: "http://192.168.0.13:8000/api/measurements/")!
+            let url = URL(string: "https://dashboard.mindmine.io/api/measurements/")!
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.setValue("Powered by Swift!", forHTTPHeaderField: "X-Powered-By")
+            
+            // Define upload task and manage returned data
+            let task = session.uploadTask(with: request, from: jsondata) { data, response, error in
+                if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                    print(dataString)
+                }
+                if let httpResponse = response as? HTTPURLResponse {
+                    print(httpResponse.statusCode)
+                }
             }
+            // Execute request
+            task.resume()
+            
+        }
+        catch {
+            print("Error encoding item array or sending data to server: \(error.localizedDescription)")
+        }
     
-    // define a outlet for the switch button
+    }
+    // GPS SWITCH button reference and action
     @IBOutlet weak var stateSwitch: UISwitch!
-    
-    // define an action for the switch button
-    // on On: ask for permissions and start displaying coordinates
     @IBAction func switchButton(_ sender: UISwitch) {
-                
-        if  stateSwitch.isOn {
+              
+        // on On: ask for permissions and start displaying coordinates
+        if stateSwitch.isOn {
                 
             // request permission from the user
             let authStatus = CLLocationManager.authorizationStatus() // deprecated from iOS14 but still working and better to support previous iOS versions.
@@ -65,7 +123,7 @@ class ViewController: UIViewController,
     }
 
     // this function will collect the successive locations
-    // this is a locsation manager delegate function
+    // this is a location manager delegate function
     func locationManager(_ manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]) {
         // to be sure there is at least one location
@@ -76,10 +134,9 @@ class ViewController: UIViewController,
         print(newLocation.timestamp,newLocation.coordinate.longitude, newLocation.coordinate.latitude)
         print("didUpdateLocation \(newLocation)")
         
-        let item = LocationItem()
-        item.date = newLocation.timestamp
-        item.longitude = String(newLocation.coordinate.longitude)
-        item.latitude = String(newLocation.coordinate.latitude)
+        let item = LocationItem(date: newLocation.timestamp,
+                                longitude: String(newLocation.coordinate.longitude),
+                                latitude: String(newLocation.coordinate.latitude))
         savedLocation.append(item)
         saveLocationList()
         }
@@ -115,7 +172,10 @@ class ViewController: UIViewController,
     
     func dataFilePath() -> URL{
         return documentsDirectory().appendingPathComponent("LocationList.plist")
-        
+    }
+    
+    func patientFilePath() -> URL{
+        return documentsDirectory().appendingPathComponent("PatientInfo.plist")
     }
     
     func saveLocationList(){
@@ -141,6 +201,7 @@ class ViewController: UIViewController,
         if let data = try? Data(contentsOf: path) {
             
             let decoder = PropertyListDecoder()
+            decoder.userInfo[.patientInfo] = patientInfo
             do {
                 
                 savedLocation = try decoder.decode([LocationItem].self,
@@ -150,6 +211,37 @@ class ViewController: UIViewController,
             }
         }
         
+    }
+    
+    func loadPatientInfo() {
+        
+        let path = patientFilePath()
+        
+        if let data = try? Data(contentsOf: path) {
+            let decoder = PropertyListDecoder()
+            do {
+                patientInfo = try decoder.decode(PatientInfo.self,
+                                                 from:data)
+            } catch {
+                print("Error decoding patient info: \(error.localizedDescription)")
+            }
+        }
+        
+    }
+    
+    
+    func savePatientInfo() {
+        let encoder = PropertyListEncoder()
+        do{
+            
+            let data = try encoder.encode(patientInfo)
+            
+            try data.write(to: patientFilePath(),
+                           options:  Data.WritingOptions.atomic)
+        }
+        catch{
+            print("Error encoding item array \(error.localizedDescription)")
+        }
     }
     
     

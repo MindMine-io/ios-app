@@ -30,6 +30,9 @@
                                 <state key="normal" title="SEND DATA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdE-XQ-nCi"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-GS-5yQ">
                                 <rect key="frame" x="216" y="475" width="49" height="31"/>
@@ -43,6 +46,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="sendButton" destination="IKt-AX-Y3z" id="miQ-dg-cM5"/>
                         <outlet property="stateSwitch" destination="Xuz-GS-5yQ" id="oDi-Ef-yht"/>
                     </connections>
                 </viewController>
