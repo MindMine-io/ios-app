@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07535F84C7DA861D8B8BC88D /* Pods_MindMineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBF7F3172A4D33FD72BF3B8 /* Pods_MindMineTests.framework */; };
 		6BC57CCC25EE523700D709E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57CCB25EE523700D709E2 /* AppDelegate.swift */; };
 		6BC57CCE25EE523700D709E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57CCD25EE523700D709E2 /* SceneDelegate.swift */; };
-		6BC57CD025EE523700D709E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57CCF25EE523700D709E2 /* ViewController.swift */; };
+		6BC57CD025EE523700D709E2 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57CCF25EE523700D709E2 /* MainController.swift */; };
 		6BC57CD325EE523700D709E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC57CD125EE523700D709E2 /* Main.storyboard */; };
 		6BC57CD525EE523A00D709E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC57CD425EE523A00D709E2 /* Assets.xcassets */; };
 		6BC57CD825EE523A00D709E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC57CD625EE523A00D709E2 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,11 @@
 		6BC57D1D25EE527D00D709E2 /* MindMineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC57D1C25EE527D00D709E2 /* MindMineUITests.swift */; };
 		6BD855D325F19ECD00C9E748 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BD855D125F19ECC00C9E748 /* Model.xcdatamodeld */; };
 		6BD855E325F2810F00C9E748 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD855E225F2810F00C9E748 /* LocationItem.swift */; };
+		7E5753090306EC916D9DC89B /* Pods_MindMine_MindMineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95876593B5A705753AAF1049 /* Pods_MindMine_MindMineUITests.framework */; };
+		9A37C886261C8E60002BA1CC /* PatientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C885261C8E60002BA1CC /* PatientInfo.swift */; };
+		9A37C88B261CB1EC002BA1CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C88A261CB1EC002BA1CC /* GoogleService-Info.plist */; };
+		9A4AB495261E151A005F45E7 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AB494261E151A005F45E7 /* SignUpController.swift */; };
+		BBA397EF591481ECDC9D893B /* Pods_MindMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613741455928EE29CBAB8DBF /* Pods_MindMine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10BDF966208F70419E730167 /* Pods-MindMine-MindMineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMine-MindMineUITests.release.xcconfig"; path = "Target Support Files/Pods-MindMine-MindMineUITests/Pods-MindMine-MindMineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		223CD5192263D0C20F3DF85F /* Pods-MindMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMine.release.xcconfig"; path = "Target Support Files/Pods-MindMine/Pods-MindMine.release.xcconfig"; sourceTree = "<group>"; };
+		4239D9CDF9D21031AC79CFAD /* Pods-MindMineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMineTests.debug.xcconfig"; path = "Target Support Files/Pods-MindMineTests/Pods-MindMineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		613741455928EE29CBAB8DBF /* Pods_MindMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC57CC825EE523700D709E2 /* MindMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC57CCB25EE523700D709E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BC57CCD25EE523700D709E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6BC57CCF25EE523700D709E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BC57CCF25EE523700D709E2 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		6BC57CD225EE523700D709E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BC57CD425EE523A00D709E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC57CD725EE523A00D709E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +63,14 @@
 		6BC57D2425EE527F00D709E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD855D225F19ECD00C9E748 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		6BD855E225F2810F00C9E748 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		86C3786A3AD75B1C3024FD8C /* Pods-MindMineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMineTests.release.xcconfig"; path = "Target Support Files/Pods-MindMineTests/Pods-MindMineTests.release.xcconfig"; sourceTree = "<group>"; };
+		88F84C81F8FC1D37D53F4950 /* Pods-MindMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMine.debug.xcconfig"; path = "Target Support Files/Pods-MindMine/Pods-MindMine.debug.xcconfig"; sourceTree = "<group>"; };
+		95876593B5A705753AAF1049 /* Pods_MindMine_MindMineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindMine_MindMineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A37C885261C8E60002BA1CC /* PatientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfo.swift; sourceTree = "<group>"; };
+		9A37C88A261CB1EC002BA1CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A4AB494261E151A005F45E7 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		9FBF7F3172A4D33FD72BF3B8 /* Pods_MindMineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindMineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BC7BBCD35652D3666830E0 /* Pods-MindMine-MindMineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindMine-MindMineUITests.debug.xcconfig"; path = "Target Support Files/Pods-MindMine-MindMineUITests/Pods-MindMine-MindMineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA397EF591481ECDC9D893B /* Pods_MindMine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07535F84C7DA861D8B8BC88D /* Pods_MindMineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5753090306EC916D9DC89B /* Pods_MindMine_MindMineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C9DBA30985A6E4A6E01D031 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88F84C81F8FC1D37D53F4950 /* Pods-MindMine.debug.xcconfig */,
+				223CD5192263D0C20F3DF85F /* Pods-MindMine.release.xcconfig */,
+				B7BC7BBCD35652D3666830E0 /* Pods-MindMine-MindMineUITests.debug.xcconfig */,
+				10BDF966208F70419E730167 /* Pods-MindMine-MindMineUITests.release.xcconfig */,
+				4239D9CDF9D21031AC79CFAD /* Pods-MindMineTests.debug.xcconfig */,
+				86C3786A3AD75B1C3024FD8C /* Pods-MindMineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6BC57CBF25EE523700D709E2 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +121,8 @@
 				6BC57CE125EE523B00D709E2 /* MindMineTests */,
 				6BC57CEC25EE523B00D709E2 /* MindMineUITests */,
 				6BC57CC925EE523700D709E2 /* Products */,
+				5C9DBA30985A6E4A6E01D031 /* Pods */,
+				76B82AD27128AC6F0D405210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +139,18 @@
 		6BC57CCA25EE523700D709E2 /* MindMine */ = {
 			isa = PBXGroup;
 			children = (
+				9A37C88A261CB1EC002BA1CC /* GoogleService-Info.plist */,
 				6BC57CCB25EE523700D709E2 /* AppDelegate.swift */,
 				6BC57CCD25EE523700D709E2 /* SceneDelegate.swift */,
-				6BC57CCF25EE523700D709E2 /* ViewController.swift */,
+				6BC57CCF25EE523700D709E2 /* MainController.swift */,
 				6BC57CD125EE523700D709E2 /* Main.storyboard */,
 				6BC57CD425EE523A00D709E2 /* Assets.xcassets */,
 				6BC57CD625EE523A00D709E2 /* LaunchScreen.storyboard */,
 				6BC57CD925EE523A00D709E2 /* Info.plist */,
 				6BD855D125F19ECC00C9E748 /* Model.xcdatamodeld */,
 				6BD855E225F2810F00C9E748 /* LocationItem.swift */,
+				9A37C885261C8E60002BA1CC /* PatientInfo.swift */,
+				9A4AB494261E151A005F45E7 /* SignUpController.swift */,
 			);
 			path = MindMine;
 			sourceTree = "<group>";
@@ -134,6 +173,16 @@
 			path = MindMineUITests;
 			sourceTree = "<group>";
 		};
+		76B82AD27128AC6F0D405210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				613741455928EE29CBAB8DBF /* Pods_MindMine.framework */,
+				95876593B5A705753AAF1049 /* Pods_MindMine_MindMineUITests.framework */,
+				9FBF7F3172A4D33FD72BF3B8 /* Pods_MindMineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC57CF225EE523B00D709E2 /* Build configuration list for PBXNativeTarget "MindMine" */;
 			buildPhases = (
+				4B7B747E9CA86A3ADDB14E1F /* [CP] Check Pods Manifest.lock */,
 				6BC57CC425EE523700D709E2 /* Sources */,
 				6BC57CC525EE523700D709E2 /* Frameworks */,
 				6BC57CC625EE523700D709E2 /* Resources */,
+				654A0EDA0D5453DED6DEAB05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC57CF525EE523B00D709E2 /* Build configuration list for PBXNativeTarget "MindMineTests" */;
 			buildPhases = (
+				050CE65815AADC1A002C5A81 /* [CP] Check Pods Manifest.lock */,
 				6BC57CDA25EE523B00D709E2 /* Sources */,
 				6BC57CDB25EE523B00D709E2 /* Frameworks */,
 				6BC57CDC25EE523B00D709E2 /* Resources */,
@@ -176,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC57CF825EE523B00D709E2 /* Build configuration list for PBXNativeTarget "MindMineUITests" */;
 			buildPhases = (
+				3FEDEED2AD6E87AF8E88A761 /* [CP] Check Pods Manifest.lock */,
 				6BC57CE525EE523B00D709E2 /* Sources */,
 				6BC57CE625EE523B00D709E2 /* Frameworks */,
 				6BC57CE725EE523B00D709E2 /* Resources */,
+				DD9BE46D954C527FC9E36197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC57CD825EE523A00D709E2 /* LaunchScreen.storyboard in Resources */,
+				9A37C88B261CB1EC002BA1CC /* GoogleService-Info.plist in Resources */,
 				6BC57CD525EE523A00D709E2 /* Assets.xcassets in Resources */,
 				6BC57CD325EE523700D709E2 /* Main.storyboard in Resources */,
 			);
@@ -259,16 +314,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		050CE65815AADC1A002C5A81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindMineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FEDEED2AD6E87AF8E88A761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindMine-MindMineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B7B747E9CA86A3ADDB14E1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindMine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654A0EDA0D5453DED6DEAB05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindMine/Pods-MindMine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindMine/Pods-MindMine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MindMine/Pods-MindMine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD9BE46D954C527FC9E36197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindMine-MindMineUITests/Pods-MindMine-MindMineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindMine-MindMineUITests/Pods-MindMine-MindMineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MindMine-MindMineUITests/Pods-MindMine-MindMineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6BC57CC425EE523700D709E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC57CD025EE523700D709E2 /* ViewController.swift in Sources */,
+				6BC57CD025EE523700D709E2 /* MainController.swift in Sources */,
 				6BD855E325F2810F00C9E748 /* LocationItem.swift in Sources */,
+				9A4AB495261E151A005F45E7 /* SignUpController.swift in Sources */,
 				6BC57CCC25EE523700D709E2 /* AppDelegate.swift in Sources */,
 				6BC57CCE25EE523700D709E2 /* SceneDelegate.swift in Sources */,
 				6BD855D325F19ECD00C9E748 /* Model.xcdatamodeld in Sources */,
+				9A37C886261C8E60002BA1CC /* PatientInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,18 +601,19 @@
 		};
 		6BC57CF325EE523B00D709E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F84C81F8FC1D37D53F4950 /* Pods-MindMine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2G6R6W3BG;
+				DEVELOPMENT_TEAM = AQ8T9LR5UR;
 				INFOPLIST_FILE = MindMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ioss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,18 +622,19 @@
 		};
 		6BC57CF425EE523B00D709E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223CD5192263D0C20F3DF85F /* Pods-MindMine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2G6R6W3BG;
+				DEVELOPMENT_TEAM = AQ8T9LR5UR;
 				INFOPLIST_FILE = MindMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ioss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,6 +643,7 @@
 		};
 		6BC57CF625EE523B00D709E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4239D9CDF9D21031AC79CFAD /* Pods-MindMineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +665,7 @@
 		};
 		6BC57CF725EE523B00D709E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C3786A3AD75B1C3024FD8C /* Pods-MindMineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +687,7 @@
 		};
 		6BC57CF925EE523B00D709E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7BC7BBCD35652D3666830E0 /* Pods-MindMine-MindMineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +707,7 @@
 		};
 		6BC57CFA25EE523B00D709E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BDF966208F70419E730167 /* Pods-MindMine-MindMineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
