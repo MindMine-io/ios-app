@@ -53,6 +53,7 @@
 		6BC57D2425EE527F00D709E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD855D225F19ECD00C9E748 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		6BD855E225F2810F00C9E748 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		9AB24809261EF1A50023F50E /* MindMine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindMine.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 		6BC57CCA25EE523700D709E2 /* MindMine */ = {
 			isa = PBXGroup;
 			children = (
+				9AB24809261EF1A50023F50E /* MindMine.entitlements */,
 				6BC57CCB25EE523700D709E2 /* AppDelegate.swift */,
 				6BC57CCD25EE523700D709E2 /* SceneDelegate.swift */,
 				6BC57CCF25EE523700D709E2 /* ViewController.swift */,
@@ -444,8 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2G6R6W3BG;
+				CODE_SIGN_ENTITLEMENTS = MindMine/MindMine.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MindMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,6 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,8 +469,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2G6R6W3BG;
+				CODE_SIGN_ENTITLEMENTS = MindMine/MindMine.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MindMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,6 +481,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.mindmine.mindmine.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
