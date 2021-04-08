@@ -1,0 +1,6 @@
+framework module Pods_MindMine_MindMineUITests {
+  umbrella header "Pods-MindMine-MindMineUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

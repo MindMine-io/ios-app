@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation //SDK to access user's location
 
-class ViewController: UIViewController,
+class MainController: UIViewController,
                       CLLocationManagerDelegate {       // a lot of iOS SDKs works via a delegate
     
     let manager: CLLocationManager = CLLocationManager() //this is the object that will provid GPS coordinates
@@ -31,6 +31,14 @@ class ViewController: UIViewController,
         print(savedLocation)
         print("app folder path is \(NSHomeDirectory())")
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+//          // ...
+//        }
     }
     
     // SEND button reference and action
