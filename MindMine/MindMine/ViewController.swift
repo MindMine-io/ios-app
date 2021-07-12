@@ -15,16 +15,11 @@ class ViewController: UIViewController,
     private var savedLocation = [LocationItem]()
     private var patientInfo = PatientInfo()
     
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-        loadPatientInfo()
-        if patientInfo.id == nil {
-            patientInfo.id = UUID()
-            savePatientInfo()
-        }
+        patientInfo = loadPatientInfo()
         print(patientInfo)
-        
         print(dataFilePath())
         loadLocationList()
         print("current saved location in the app")
@@ -213,37 +208,18 @@ class ViewController: UIViewController,
         
     }
     
-    func loadPatientInfo() {
+    
+    func loadPatientInfo() -> PatientInfo {
+        var patientInfo = PatientInfo()
         
-        let path = patientFilePath()
-        
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("PatientInfo.plist")
+
         if let data = try? Data(contentsOf: path) {
             let decoder = PropertyListDecoder()
-            do {
-                patientInfo = try decoder.decode(PatientInfo.self,
-                                                 from:data)
-            } catch {
-                print("Error decoding patient info: \(error.localizedDescription)")
-            }
+            patientInfo = try! decoder.decode(PatientInfo.self, from:data)
         }
-        
+        return patientInfo
     }
-    
-    
-    func savePatientInfo() {
-        let encoder = PropertyListEncoder()
-        do{
-            
-            let data = try encoder.encode(patientInfo)
-            
-            try data.write(to: patientFilePath(),
-                           options:  Data.WritingOptions.atomic)
-        }
-        catch{
-            print("Error encoding item array \(error.localizedDescription)")
-        }
-    }
-    
     
     
     /**

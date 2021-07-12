@@ -16,7 +16,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let patientInfo = loadPatientInfo()
+        guard patientInfo.id != nil else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "IdInput") as! IdSetUpController
+            self.window = UIWindow(windowScene: windowScene)
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,6 +58,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    
+    func loadPatientInfo() -> PatientInfo {
+        var patientInfo = PatientInfo()
+        
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("PatientInfo.plist")
+
+        if let data = try? Data(contentsOf: path) {
+            let decoder = PropertyListDecoder()
+            patientInfo = try! decoder.decode(PatientInfo.self, from:data)
+        }
+        return patientInfo
+    }
 
 }
 
