@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct OnboardingCardView: View {
+    
+    var onboardingCard: OnboardingCard
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(onboardingCard.headline)
+            Text(onboardingCard.content)
+        }
     }
 }
 
 struct OnboardingCardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCardView()
+        OnboardingCardView(onboardingCard: onboardingCardsData[1])
     }
 }

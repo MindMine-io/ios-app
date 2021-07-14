@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */; };
+		9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */; };
 		9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEC8269C8E42005777F2 /* MindMineApp.swift */; };
 		9AD4AECB269C8E42005777F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AECA269C8E42005777F2 /* ContentView.swift */; };
 		9AD4AECD269C8E44005777F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4AECC269C8E44005777F2 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardModel.swift; sourceTree = "<group>"; };
 		9AD4AEC5269C8E42005777F2 /* MindMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD4AEC8269C8E42005777F2 /* MindMineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMineApp.swift; sourceTree = "<group>"; };
 		9AD4AECA269C8E42005777F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				9AD4AEF6269CE575005777F2 /* OnboardingView.swift */,
+				9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */,
+				9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 				9AD4AEF7269CE575005777F2 /* OnboardingView.swift in Sources */,
 				9AD4AECB269C8E42005777F2 /* ContentView.swift in Sources */,
 				9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */,
+				9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */,
+				9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

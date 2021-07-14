@@ -9,14 +9,16 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    var onboardingCards: [OnboardingCard] = onboardingCardsData
+    
     var body: some View {
         TabView(content:  {
-                    Text("First onboarding")
-                    Text("Second onboarding")
-                    Text("Third onboarding")
-                })
-            .tabViewStyle(PageTabViewStyle()) // Switch to page scroll instead of tabs
-            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) // Navigation dots
+            ForEach(onboardingCards) { item in
+                OnboardingCardView(onboardingCard: item)
+            }
+        })
+        .tabViewStyle(PageTabViewStyle()) // Switch to page scroll instead of tabs
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) // Navigation dots
     }
 }
 
