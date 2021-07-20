@@ -13,8 +13,10 @@ struct OnboardingCard: Identifiable {
     var content: String
 }
 
+// Setting onboarding data here, could go in separate file,
+// plist or retrieved from server API if need be
 let onboardingCardsData: [OnboardingCard] = [
     OnboardingCard(headline: "First onboarding", content: "Card content"),
     OnboardingCard(headline: "Second onboarding", content: "Card content"),
-    OnboardingCard(headline: "Three onboarding", content: "Card content")
+    OnboardingCard(headline: "Third onboarding", content: "Card content")
 ]

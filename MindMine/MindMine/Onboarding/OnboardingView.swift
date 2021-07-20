@@ -9,16 +9,26 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    // To get which page on the onboarding is currently on screen
+    // Need @State because binded by TabView to automatically be updated during navigation
+    @State var selectedView = 0
+    // Get the onboarding views data
     var onboardingCards: [OnboardingCard] = onboardingCardsData
     
     var body: some View {
-        TabView(content:  {
-            ForEach(onboardingCards) { item in
-                OnboardingCardView(onboardingCard: item)
+        // TabView, binding 'selectedView' to update it during navigation
+        TabView(selection: $selectedView,
+                content: {
+                    // Loop through all onboarding pages
+                    ForEach(onboardingCards.indices) { index in
+                        // Display corresponding view, passing information whether
+                        // current index is the last one or not (to trigger button)
+                        OnboardingCardView(onboardingCard: onboardingCards[index], showButton: selectedView == onboardingCards.count - 1).tag(index)
+                        // Need .tag() when using 'selection' in TabView to correctly link navigation dots
             }
         })
-        .tabViewStyle(PageTabViewStyle()) // Switch to page scroll instead of tabs
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) // Navigation dots
+        .tabViewStyle(PageTabViewStyle()) // Switch to page swipe instead of tabs
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) // Show navigation dots
     }
 }
 

@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // Accessing tag in UserDefaults on whether onboarding has already been done
+    @AppStorage("onboardingDone") var onboardingDone: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // Show main content or onboarding
+        if onboardingDone {
+            Text("Hello world")
+        }
+        else {
+            OnboardingView()
+        }
     }
 }
 
