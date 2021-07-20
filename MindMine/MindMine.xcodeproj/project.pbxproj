@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A632A2026A714E100E9BD0C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A632A1F26A714E100E9BD0C /* SetupView.swift */; };
 		9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */; };
 		9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */; };
 		9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEC8269C8E42005777F2 /* MindMineApp.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A632A1F26A714E100E9BD0C /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardModel.swift; sourceTree = "<group>"; };
 		9AD4AEC5269C8E42005777F2 /* MindMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A632A1E26A714CC00E9BD0C /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				9A632A1F26A714E100E9BD0C /* SetupView.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
 		9AC24B80269CE82B00BD956B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 				9AD4AECC269C8E44005777F2 /* Assets.xcassets */,
 				9AD4AED1269C8E44005777F2 /* Info.plist */,
 				9AC24B80269CE82B00BD956B /* Onboarding */,
+				9A632A1E26A714CC00E9BD0C /* Setup */,
 				9AD4AECE269C8E44005777F2 /* Preview Content */,
 			);
 			path = MindMine;
@@ -280,6 +291,7 @@
 				9AD4AECB269C8E42005777F2 /* ContentView.swift in Sources */,
 				9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */,
 				9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */,
+				9A632A2026A714E100E9BD0C /* SetupView.swift in Sources */,
 				9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

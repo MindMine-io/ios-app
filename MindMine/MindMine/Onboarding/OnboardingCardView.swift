@@ -13,17 +13,15 @@ struct OnboardingCardView: View {
     var onboardingCard: OnboardingCard
     // Whether to show button or not
     var showButton: Bool
-    // Getting onboarding state tag from UserDefault to update it if button clicked
-    @AppStorage("onboardingDone") var onboardingDone: Bool = false
     
     var body: some View {
         VStack {
             Text(onboardingCard.headline)
             Text(onboardingCard.content)
-            // Change onboarding state in UserDefaults on button click
-            // Triggers main view (see ContentView) and prevent showing onboarding on relaunch
-            Button("Getting started") {
-                onboardingDone = true
+            // Button to Setup view
+            //  -> as a navigation link to be able to go back to onboarding
+            NavigationLink(destination: SetupView()) {
+                Text("Start setup")
             }
             .disabled(!showButton) // Only show based on 'showButton' toggle
         }
