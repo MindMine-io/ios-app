@@ -20,7 +20,7 @@ struct OnboardingCardView: View {
             Text(onboardingCard.content)
             // Button to Setup view
             //  -> as a navigation link to be able to go back to onboarding
-            NavigationLink(destination: SetupView()) {
+            NavigationLink(destination: SetupEntryView()) {
                 Text("Start setup")
             }
             .disabled(!showButton) // Only show based on 'showButton' toggle

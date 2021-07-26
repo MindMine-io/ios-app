@@ -1,20 +1,22 @@
 //
-//  SetupView.swift
+//  SetupPermissionsView.swift
 //  MindMine
 //
-//  Created by Hugo on 20/07/2021.
+//  Created by Hugo on 23/07/2021.
 //
 
 import SwiftUI
 
-struct SetupView: View {
+struct SetupPermissionsView: View {
     
     // Getting onboarding state tag from UserDefault to update it if button clicked
     @AppStorage("onboardingDone") var onboardingDone: Bool = false
     
+    var progressValue: Float = 0.8
+    
     var body: some View {
-        VStack {
-            Text("Setup view")
+        BaseProgressView(progressValue: progressValue) {
+            Text("Setup permissions view")
             // Change onboarding state in UserDefaults on button click
             // Triggers main view (see ContentView) and prevent showing onboarding & setup on relaunch
             Button("Getting started") {
@@ -25,8 +27,8 @@ struct SetupView: View {
     }
 }
 
-struct SetupView_Previews: PreviewProvider {
+struct SetupPermissionsView_Previews: PreviewProvider {
     static var previews: some View {
-        SetupView()
+        SetupPermissionsView()
     }
 }
