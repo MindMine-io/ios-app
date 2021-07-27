@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         // Show main content or onboarding
         if onboardingDone {
-            Text("Hello world")
+            MainView()
         }
         else {
             OnboardingView()
