@@ -10,11 +10,12 @@
 		9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */; };
 		9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */; };
 		9A2AF1E926AB0749000B9A9A /* SetupPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */; };
+		9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D1C626B3DC7F008046F8 /* SettingsView.swift */; };
 		9A57DD8326AEBA6A004959E1 /* BaseProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A57DD8226AEBA6A004959E1 /* BaseProgressView.swift */; };
 		9A632A2026A714E100E9BD0C /* SetupEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A632A1F26A714E100E9BD0C /* SetupEntryView.swift */; };
 		9A64EB1926B00B070020E9AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB1826B00B070020E9AE /* DashboardView.swift */; };
 		9A64EB2126B00B320020E9AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB2026B00B320020E9AE /* MainView.swift */; };
-		9A64EB2626B0111D0020E9AE /* MainTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB2526B0111D0020E9AE /* MainTabModel.swift */; };
+		9A64EB2F26B01EED0020E9AE /* DataExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB2E26B01EED0020E9AE /* DataExportView.swift */; };
 		9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */; };
 		9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */; };
 		9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEC8269C8E42005777F2 /* MindMineApp.swift */; };
@@ -47,11 +48,12 @@
 		9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNameView.swift; sourceTree = "<group>"; };
 		9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupBiomarkersView.swift; sourceTree = "<group>"; };
 		9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPermissionsView.swift; sourceTree = "<group>"; };
+		9A53D1C626B3DC7F008046F8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9A57DD8226AEBA6A004959E1 /* BaseProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProgressView.swift; sourceTree = "<group>"; };
 		9A632A1F26A714E100E9BD0C /* SetupEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupEntryView.swift; sourceTree = "<group>"; };
 		9A64EB1826B00B070020E9AE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		9A64EB2026B00B320020E9AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		9A64EB2526B0111D0020E9AE /* MainTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabModel.swift; sourceTree = "<group>"; };
+		9A64EB2E26B01EED0020E9AE /* DataExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExportView.swift; sourceTree = "<group>"; };
 		9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardModel.swift; sourceTree = "<group>"; };
 		9AD4AEC5269C8E42005777F2 /* MindMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,22 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		9A64EB2B26B01E6F0020E9AE /* DataExport */ = {
+			isa = PBXGroup;
+			children = (
+				9A64EB2E26B01EED0020E9AE /* DataExportView.swift */,
+			);
+			path = DataExport;
+			sourceTree = "<group>";
+		};
+		9A64EB2D26B01E950020E9AE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9A53D1C626B3DC7F008046F8 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		9AC24B80269CE82B00BD956B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +165,8 @@
 		9AD4AEC7269C8E42005777F2 /* MindMine */ = {
 			isa = PBXGroup;
 			children = (
+				9A64EB2D26B01E950020E9AE /* Settings */,
+				9A64EB2B26B01E6F0020E9AE /* DataExport */,
 				9A64EB1726B00A8F0020E9AE /* Dashboard */,
 				9AD4AEC8269C8E42005777F2 /* MindMineApp.swift */,
 				9AD4AECA269C8E42005777F2 /* ContentView.swift */,
@@ -156,7 +176,6 @@
 				9A632A1E26A714CC00E9BD0C /* Setup */,
 				9AD4AECE269C8E44005777F2 /* Preview Content */,
 				9A64EB2026B00B320020E9AE /* MainView.swift */,
-				9A64EB2526B0111D0020E9AE /* MainTabModel.swift */,
 			);
 			path = MindMine;
 			sourceTree = "<group>";
@@ -323,12 +342,13 @@
 				9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */,
 				9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */,
 				9A632A2026A714E100E9BD0C /* SetupEntryView.swift in Sources */,
+				9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */,
 				9A64EB1926B00B070020E9AE /* DashboardView.swift in Sources */,
 				9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */,
 				9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */,
 				9A57DD8326AEBA6A004959E1 /* BaseProgressView.swift in Sources */,
 				9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */,
-				9A64EB2626B0111D0020E9AE /* MainTabModel.swift in Sources */,
+				9A64EB2F26B01EED0020E9AE /* DataExportView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

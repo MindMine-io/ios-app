@@ -9,15 +9,19 @@ import SwiftUI
 
 struct MainView: View {
     
-    let views = mainTabData
-    
     var body: some View {
         TabView{
-            ForEach(views) { item in
-                item.view.tabItem {
-                    item.image
-                    Text(item.label)
-                }
+            DashboardView().tabItem {
+                Image(systemName: "house")
+                Text("Dashboard")
+            }
+            DataExportView().tabItem {
+                Image(systemName: "square.and.arrow.up")
+                Text("Export")
+            }
+            SettingsView().tabItem {
+                Image(systemName: "gearshape")
+                Text("Settings")
             }
         }
     }

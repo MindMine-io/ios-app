@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct DashboardView: View, Identifiable {
-    var id = UUID()
+// View for data visualisation
+struct DashboardView: View {
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Dashboard view")
     }
 }
 
