@@ -13,11 +13,13 @@
 		9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D1C626B3DC7F008046F8 /* SettingsView.swift */; };
 		9A53D1CD26B3F68F008046F8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9A53D1CC26B3F68F008046F8 /* Realm */; };
 		9A53D1CF26B3F68F008046F8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A53D1CE26B3F68F008046F8 /* RealmSwift */; };
+		9A53D1D426B41EE7008046F8 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D1D326B41EE7008046F8 /* ActivityModel.swift */; };
 		9A57DD8326AEBA6A004959E1 /* BaseProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A57DD8226AEBA6A004959E1 /* BaseProgressView.swift */; };
 		9A632A2026A714E100E9BD0C /* SetupEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A632A1F26A714E100E9BD0C /* SetupEntryView.swift */; };
 		9A64EB1926B00B070020E9AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB1826B00B070020E9AE /* DashboardView.swift */; };
 		9A64EB2126B00B320020E9AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB2026B00B320020E9AE /* MainView.swift */; };
 		9A64EB2F26B01EED0020E9AE /* DataExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64EB2E26B01EED0020E9AE /* DataExportView.swift */; };
+		9A80750226B81BCB000BE2ED /* DetailActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A80750126B81BCB000BE2ED /* DetailActivityView.swift */; };
 		9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */; };
 		9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */; };
 		9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEC8269C8E42005777F2 /* MindMineApp.swift */; };
@@ -27,6 +29,7 @@
 		9AD4AEDB269C8E44005777F2 /* MindMineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEDA269C8E44005777F2 /* MindMineTests.swift */; };
 		9AD4AEE6269C8E44005777F2 /* MindMineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEE5269C8E44005777F2 /* MindMineUITests.swift */; };
 		9AD4AEF7269CE575005777F2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4AEF6269CE575005777F2 /* OnboardingView.swift */; };
+		9AF3CD1226B7F7740098E59C /* DashboardActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3CD1126B7F7740098E59C /* DashboardActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +54,13 @@
 		9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupBiomarkersView.swift; sourceTree = "<group>"; };
 		9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPermissionsView.swift; sourceTree = "<group>"; };
 		9A53D1C626B3DC7F008046F8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9A53D1D326B41EE7008046F8 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9A57DD8226AEBA6A004959E1 /* BaseProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProgressView.swift; sourceTree = "<group>"; };
 		9A632A1F26A714E100E9BD0C /* SetupEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupEntryView.swift; sourceTree = "<group>"; };
 		9A64EB1826B00B070020E9AE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		9A64EB2026B00B320020E9AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9A64EB2E26B01EED0020E9AE /* DataExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExportView.swift; sourceTree = "<group>"; };
+		9A80750126B81BCB000BE2ED /* DetailActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActivityView.swift; sourceTree = "<group>"; };
 		9AA8127A269F3B2600E39CB4 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		9AA8128F269F82B500E39CB4 /* OnboardingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardModel.swift; sourceTree = "<group>"; };
 		9AD4AEC5269C8E42005777F2 /* MindMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +76,7 @@
 		9AD4AEE5269C8E44005777F2 /* MindMineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMineUITests.swift; sourceTree = "<group>"; };
 		9AD4AEE7269C8E44005777F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD4AEF6269CE575005777F2 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9AF3CD1126B7F7740098E59C /* DashboardActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				9A64EB1826B00B070020E9AE /* DashboardView.swift */,
+				9A53D1D326B41EE7008046F8 /* ActivityModel.swift */,
+				9AF3CD1126B7F7740098E59C /* DashboardActivityView.swift */,
+				9A80750126B81BCB000BE2ED /* DetailActivityView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -348,9 +357,12 @@
 			files = (
 				9A2AF1E926AB0749000B9A9A /* SetupPermissionsView.swift in Sources */,
 				9A64EB2126B00B320020E9AE /* MainView.swift in Sources */,
+				9A80750226B81BCB000BE2ED /* DetailActivityView.swift in Sources */,
 				9AD4AEF7269CE575005777F2 /* OnboardingView.swift in Sources */,
 				9AD4AECB269C8E42005777F2 /* ContentView.swift in Sources */,
+				9AF3CD1226B7F7740098E59C /* DashboardActivityView.swift in Sources */,
 				9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */,
+				9A53D1D426B41EE7008046F8 /* ActivityModel.swift in Sources */,
 				9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */,
 				9A632A2026A714E100E9BD0C /* SetupEntryView.swift in Sources */,
 				9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */,
