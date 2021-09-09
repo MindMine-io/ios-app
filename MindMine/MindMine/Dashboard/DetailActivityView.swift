@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  DetailActivityView.swift
 //  MindMine
 //
 //  Created by Hugo on 02/08/2021.
@@ -14,13 +14,13 @@ struct DetailActivityView: View {
     // trigger view update on modification
     @ObservedRealmObject var activityItems: ActivityGroup
     
-    // Acitvity data detail view
+    // Activity data detail view
     var body: some View {
         // As fisrt version, activity items list and "add" button
         VStack {
             List{
                 ForEach(activityItems.items) { item in
-                    Text(String(item.int))
+                    Text(String(item.value))
                 }
             }
             Spacer()

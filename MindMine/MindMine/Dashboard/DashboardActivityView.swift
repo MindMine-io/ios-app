@@ -1,5 +1,5 @@
 //
-//  DashboardItemView.swift
+//  DashboardActivityView.swift
 //  MindMine
 //
 //  Created by Hugo on 02/08/2021.
