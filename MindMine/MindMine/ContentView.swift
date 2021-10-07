@@ -6,6 +6,10 @@
 //
 
 import SwiftUI
+import RealmSwift
+
+let app: RealmSwift.App? = RealmSwift.App(id: "mindmine_test-qldtk")
+// let app: RealmSwift.App? = nil
 
 struct ContentView: View {
     
@@ -15,7 +19,12 @@ struct ContentView: View {
     var body: some View {
         // Show main content or onboarding
         if onboardingDone {
-            MainView()
+            if let app = app {
+                SyncMainView()
+            }
+            else {
+                MainView()
+            }
         }
         else {
             OnboardingView()

@@ -20,6 +20,7 @@ struct DashboardView: View {
     // otherwise creates them (to present it in the dashboard view)
     init() {
         let realm = try! Realm() // Get database
+        print("Realm is located at:", realm.configuration.fileURL!)
         if activityGroups.count == 0 {
             try! realm.write { // Write commands
                 realm.add(ActivityGroup())

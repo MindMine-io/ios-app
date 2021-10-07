@@ -10,6 +10,8 @@
 		9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */; };
 		9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */; };
 		9A2AF1E926AB0749000B9A9A /* SetupPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */; };
+		9A3342D3270CB97700000B03 /* SyncMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3342D2270CB97700000B03 /* SyncMainView.swift */; };
+		9A3342D8270CBD1200000B03 /* RealmLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3342D7270CBD1200000B03 /* RealmLoginView.swift */; };
 		9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D1C626B3DC7F008046F8 /* SettingsView.swift */; };
 		9A53D1CD26B3F68F008046F8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9A53D1CC26B3F68F008046F8 /* Realm */; };
 		9A53D1CF26B3F68F008046F8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A53D1CE26B3F68F008046F8 /* RealmSwift */; };
@@ -58,6 +60,8 @@
 		9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNameView.swift; sourceTree = "<group>"; };
 		9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupBiomarkersView.swift; sourceTree = "<group>"; };
 		9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPermissionsView.swift; sourceTree = "<group>"; };
+		9A3342D2270CB97700000B03 /* SyncMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncMainView.swift; sourceTree = "<group>"; };
+		9A3342D7270CBD1200000B03 /* RealmLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLoginView.swift; sourceTree = "<group>"; };
 		9A53D1C626B3DC7F008046F8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9A53D1D326B41EE7008046F8 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		9A57DD8226AEBA6A004959E1 /* BaseProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProgressView.swift; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 				9AD4AECE269C8E44005777F2 /* Preview Content */,
 				9A64EB2026B00B320020E9AE /* MainView.swift */,
 				9A5EF85E26EA203100CE57C0 /* Utils.swift */,
+				9A3342D2270CB97700000B03 /* SyncMainView.swift */,
+				9A3342D7270CBD1200000B03 /* RealmLoginView.swift */,
 			);
 			path = MindMine;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				9A64EB2126B00B320020E9AE /* MainView.swift in Sources */,
 				9A80750226B81BCB000BE2ED /* DetailActivityView.swift in Sources */,
 				9AD4AEF7269CE575005777F2 /* OnboardingView.swift in Sources */,
+				9A3342D3270CB97700000B03 /* SyncMainView.swift in Sources */,
 				9A5EF85026E7B96600CE57C0 /* DashboardMoodView.swift in Sources */,
 				9AD4AECB269C8E42005777F2 /* ContentView.swift in Sources */,
 				9A5EF85F26EA203100CE57C0 /* Utils.swift in Sources */,
@@ -389,6 +396,7 @@
 				9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */,
 				9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */,
 				9A5EF85526E7BBA300CE57C0 /* DetailMoodView.swift in Sources */,
+				9A3342D8270CBD1200000B03 /* RealmLoginView.swift in Sources */,
 				9A57DD8326AEBA6A004959E1 /* BaseProgressView.swift in Sources */,
 				9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */,
 				9A64EB2F26B01EED0020E9AE /* DataExportView.swift in Sources */,
