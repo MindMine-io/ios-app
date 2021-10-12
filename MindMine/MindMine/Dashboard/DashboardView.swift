@@ -15,6 +15,7 @@ struct DashboardView: View {
     // Get all the ActivityGroup objects present in the database
     @ObservedResults(ActivityGroup.self) var activityGroups
     @ObservedResults(MoodGroup.self) var moodGroups
+    @ObservedResults(SleepGroup.self) var sleepGroups
     
     // Before loading view, check if each ___Group exists,
     // otherwise creates them (to present it in the dashboard view)
@@ -30,6 +31,11 @@ struct DashboardView: View {
                 realm.add(MoodGroup())
             }
         }
+        if sleepGroups.count == 0 {
+            try! realm.write { // Write commands
+                realm.add(SleepGroup())
+            }
+        }
     }
     
     var body: some View {
@@ -40,6 +46,12 @@ struct DashboardView: View {
                     NavigationLink(destination: DetailActivityView(activityItems: activityItems)) {
                         // Custom view for ActivityGroup card
                         DashboardActivityView(activityItems: activityItems)
+                    }
+                }
+                if let sleepItems = sleepGroups.first {
+                    NavigationLink(destination: DetailSleepView(sleepItems: sleepItems)) {
+                        // Custom view for ActivityGroup card
+                        DashboardSleepView(sleepItems: sleepItems)
                     }
                 }
                 if let moodItems = moodGroups.first {

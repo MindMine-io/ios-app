@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B60E8212715E29B0000C5FE /* SleepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E8202715E29B0000C5FE /* SleepModel.swift */; };
+		6B60E8262715E3C80000C5FE /* DashboardSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E8252715E3C80000C5FE /* DashboardSleepView.swift */; };
+		6B60E82B2715E5020000C5FE /* DetailSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E82A2715E5020000C5FE /* DetailSleepView.swift */; };
 		9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */; };
 		9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */; };
 		9A2AF1E926AB0749000B9A9A /* SetupPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B60E8202715E29B0000C5FE /* SleepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModel.swift; sourceTree = "<group>"; };
+		6B60E8252715E3C80000C5FE /* DashboardSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSleepView.swift; sourceTree = "<group>"; };
+		6B60E82A2715E5020000C5FE /* DetailSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSleepView.swift; sourceTree = "<group>"; };
 		9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNameView.swift; sourceTree = "<group>"; };
 		9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupBiomarkersView.swift; sourceTree = "<group>"; };
 		9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPermissionsView.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				9A5EF84F26E7B96600CE57C0 /* DashboardMoodView.swift */,
 				9A5EF85426E7BBA300CE57C0 /* DetailMoodView.swift */,
 				9A5EF85926E960DF00CE57C0 /* InputMoodView.swift */,
+				6B60E8202715E29B0000C5FE /* SleepModel.swift */,
+				6B60E8252715E3C80000C5FE /* DashboardSleepView.swift */,
+				6B60E82A2715E5020000C5FE /* DetailSleepView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -377,6 +386,7 @@
 				9AD4AEF7269CE575005777F2 /* OnboardingView.swift in Sources */,
 				9A5EF85026E7B96600CE57C0 /* DashboardMoodView.swift in Sources */,
 				9AD4AECB269C8E42005777F2 /* ContentView.swift in Sources */,
+				6B60E8262715E3C80000C5FE /* DashboardSleepView.swift in Sources */,
 				9A5EF85F26EA203100CE57C0 /* Utils.swift in Sources */,
 				9AF3CD1226B7F7740098E59C /* DashboardActivityView.swift in Sources */,
 				9A5EF84B26E7B54D00CE57C0 /* MoodModel.swift in Sources */,
@@ -386,8 +396,10 @@
 				9A632A2026A714E100E9BD0C /* SetupEntryView.swift in Sources */,
 				9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */,
 				9A64EB1926B00B070020E9AE /* DashboardView.swift in Sources */,
+				6B60E8212715E29B0000C5FE /* SleepModel.swift in Sources */,
 				9AA81290269F82B500E39CB4 /* OnboardingCardModel.swift in Sources */,
 				9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */,
+				6B60E82B2715E5020000C5FE /* DetailSleepView.swift in Sources */,
 				9A5EF85526E7BBA300CE57C0 /* DetailMoodView.swift in Sources */,
 				9A57DD8326AEBA6A004959E1 /* BaseProgressView.swift in Sources */,
 				9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */,
