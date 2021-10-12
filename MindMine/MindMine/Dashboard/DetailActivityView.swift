@@ -13,6 +13,13 @@ struct DetailActivityView: View {
     // Equivalent of @Binding -> referenced in parent view,
     // trigger view update on modification
     @ObservedRealmObject var activityItems: ActivityGroup
+    // should be private!
+    var healthStore: HealthDataStore?
+    
+    //init() {
+    //    healthStore = HealthDataStore()
+    //}
+
     
     // Activity data detail view
     var body: some View {
@@ -27,8 +34,23 @@ struct DetailActivityView: View {
             Button("Add item") {
                 // Create new item and add to list -> trigger Realm write under the hood
                 $activityItems.items.append(ActivityItem())
+            }.padding() 
+            
+            List{
+            }
+            Spacer()
+            Button("Add HealthKit data") {
+                // Create new item and add to list -> trigger Realm write under the hood
+                //if let healthStore = healthStore
+                healthStore?.requestAuthorisation(completion: { (success) in
+                })
+                
+                
+                
             }.padding()
         }
+        
+        
     }
 }
 

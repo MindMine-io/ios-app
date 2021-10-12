@@ -16,6 +16,8 @@ struct DashboardView: View {
     @ObservedResults(ActivityGroup.self) var activityGroups
     @ObservedResults(MoodGroup.self) var moodGroups
     @ObservedResults(SleepGroup.self) var sleepGroups
+    var healthStore: HealthDataStore?
+    
     
     // Before loading view, check if each ___Group exists,
     // otherwise creates them (to present it in the dashboard view)
@@ -36,6 +38,8 @@ struct DashboardView: View {
                 realm.add(SleepGroup())
             }
         }
+        
+        healthStore = HealthDataStore()
     }
     
     var body: some View {
@@ -43,10 +47,13 @@ struct DashboardView: View {
             List {
                 // Displays navigation link towards list of items (DetailActivityView)
                 if let activityItems = activityGroups.first {
-                    NavigationLink(destination: DetailActivityView(activityItems: activityItems)) {
+                    if let healthStore = healthStore {
+                        NavigationLink(destination: DetailActivityView(activityItems: activityItems, healthStore: healthStore)) {
                         // Custom view for ActivityGroup card
                         DashboardActivityView(activityItems: activityItems)
                     }
+                    }
+                    
                 }
                 if let sleepItems = sleepGroups.first {
                     NavigationLink(destination: DetailSleepView(sleepItems: sleepItems)) {

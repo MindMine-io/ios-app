@@ -10,6 +10,8 @@
 		6B60E8212715E29B0000C5FE /* SleepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E8202715E29B0000C5FE /* SleepModel.swift */; };
 		6B60E8262715E3C80000C5FE /* DashboardSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E8252715E3C80000C5FE /* DashboardSleepView.swift */; };
 		6B60E82B2715E5020000C5FE /* DetailSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E82A2715E5020000C5FE /* DetailSleepView.swift */; };
+		6B60E83A2715EF640000C5FE /* HealthDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60E8392715EF640000C5FE /* HealthDataStore.swift */; };
+		6B60E8442716009E0000C5FE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B60E8432716009E0000C5FE /* HealthKit.framework */; };
 		9A2AF1DF26AB05CD000B9A9A /* SetupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */; };
 		9A2AF1E426AB0659000B9A9A /* SetupBiomarkersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */; };
 		9A2AF1E926AB0749000B9A9A /* SetupPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */; };
@@ -61,6 +63,9 @@
 		6B60E8202715E29B0000C5FE /* SleepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModel.swift; sourceTree = "<group>"; };
 		6B60E8252715E3C80000C5FE /* DashboardSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSleepView.swift; sourceTree = "<group>"; };
 		6B60E82A2715E5020000C5FE /* DetailSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSleepView.swift; sourceTree = "<group>"; };
+		6B60E8392715EF640000C5FE /* HealthDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataStore.swift; sourceTree = "<group>"; };
+		6B60E8412716009E0000C5FE /* MindMine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindMine.entitlements; sourceTree = "<group>"; };
+		6B60E8432716009E0000C5FE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9A2AF1DE26AB05CC000B9A9A /* SetupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNameView.swift; sourceTree = "<group>"; };
 		9A2AF1E326AB0659000B9A9A /* SetupBiomarkersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupBiomarkersView.swift; sourceTree = "<group>"; };
 		9A2AF1E826AB0749000B9A9A /* SetupPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPermissionsView.swift; sourceTree = "<group>"; };
@@ -100,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B60E8442716009E0000C5FE /* HealthKit.framework in Frameworks */,
 				9A53D1CF26B3F68F008046F8 /* RealmSwift in Frameworks */,
 				9A53D1CD26B3F68F008046F8 /* Realm in Frameworks */,
 			);
@@ -122,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B60E8382715EF470000C5FE /* DataStreams */ = {
+			isa = PBXGroup;
+			children = (
+				6B60E8392715EF640000C5FE /* HealthDataStore.swift */,
+			);
+			path = DataStreams;
+			sourceTree = "<group>";
+		};
+		6B60E8422716009E0000C5FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B60E8432716009E0000C5FE /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A632A1E26A714CC00E9BD0C /* Setup */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +207,7 @@
 				9AD4AED9269C8E44005777F2 /* MindMineTests */,
 				9AD4AEE4269C8E44005777F2 /* MindMineUITests */,
 				9AD4AEC6269C8E42005777F2 /* Products */,
+				6B60E8422716009E0000C5FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +224,8 @@
 		9AD4AEC7269C8E42005777F2 /* MindMine */ = {
 			isa = PBXGroup;
 			children = (
+				6B60E8412716009E0000C5FE /* MindMine.entitlements */,
+				6B60E8382715EF470000C5FE /* DataStreams */,
 				9A64EB2D26B01E950020E9AE /* Settings */,
 				9A64EB2B26B01E6F0020E9AE /* DataExport */,
 				9A64EB1726B00A8F0020E9AE /* Dashboard */,
@@ -392,6 +417,7 @@
 				9A5EF84B26E7B54D00CE57C0 /* MoodModel.swift in Sources */,
 				9AD4AEC9269C8E42005777F2 /* MindMineApp.swift in Sources */,
 				9A53D1D426B41EE7008046F8 /* ActivityModel.swift in Sources */,
+				6B60E83A2715EF640000C5FE /* HealthDataStore.swift in Sources */,
 				9AA8127B269F3B2600E39CB4 /* OnboardingCardView.swift in Sources */,
 				9A632A2026A714E100E9BD0C /* SetupEntryView.swift in Sources */,
 				9A53D1C726B3DC7F008046F8 /* SettingsView.swift in Sources */,
@@ -560,9 +586,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindMine/MindMine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MindMine/Preview Content\"";
-				DEVELOPMENT_TEAM = AQ8T9LR5UR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MindMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -582,9 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindMine/MindMine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MindMine/Preview Content\"";
-				DEVELOPMENT_TEAM = AQ8T9LR5UR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MindMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
